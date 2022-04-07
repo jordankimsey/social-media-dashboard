@@ -2,7 +2,12 @@ import React from 'react'
 
 const attributionFooter = () => {
   return (
-    <div className='attribution'>
+    <div
+      className='attribution fixed
+             inset-x-0
+             bottom-0
+             p-4'
+    >
       Challenge by{' '}
       <a
         href='https://www.frontendmentor.io?ref=challenge'

@@ -1,13 +1,14 @@
 import React from 'react'
-import Switch from './Switch'
+import Switch from './switch/Switch'
+
 
 const DarkMode = () => {
   return (
-      <div>
-          <h3>Dark Mode</h3>
-          <Switch/>
+    <div className='flex justify-between py-4'>
+      <h3>Dark Mode</h3>
+      <Switch />
     </div>
-  )
+  );
 }
 
 export default DarkMode

@@ -5,8 +5,10 @@ import Header from './components/Header';
 function App() {
   return (
     <div className='App'>
-      <Header />
-     <AttributionFooter/>
+      <div className='container h-screen w-screen overflow-y-auto bg-red-600'>
+        <Header />
+        <AttributionFooter />
+      </div>
     </div>
   );
 }
