@@ -1,8 +1,12 @@
+import './App.css'
+import AttributionFooter from './components/AttributionFooter';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className='App'>
-      hello
+      <Header />
+     <AttributionFooter/>
     </div>
   );
 }
