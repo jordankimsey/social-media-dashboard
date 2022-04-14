@@ -1,24 +1,23 @@
 import React from 'react'
-import facebook from '../../images/icon-facebook.svg'
-import uparrow from '../../images/icon-up.svg'
 
 
-const SocialCard = () => {
+
+const SocialCard = ({ icon, userName, subscriberType, followers, arrow, amountChange }) => {
   return (
-    <div className='container flex flex-col justify-center items-center text-center  bg-gray-200 p-8 w-11/12 rounded-md'>
+    <div className='container mb-5 border-t-4 border-blue-500 flex flex-col justify-center items-center text-center  bg-gray-100 p-8 w-11/12 rounded-md'>
       <div className='social flex'>
-        <img src={facebook} alt='' />
-        <h3 className='ml-3'>@nathanf</h3>
+        <img src={icon} alt='' />
+        <h3 className='ml-3'>{ userName}</h3>
       </div>
       <div className='follower_count'>
         <h2>
-          <b>1987</b>
+          <b className='text-3xl'>{ followers}</b>
         </h2>
-        <p>FOLLOWERS</p>
+        <p>{ subscriberType }</p>
       </div>
       <div className='percent_change flex items-center'>
-        <img src={uparrow} alt='' />
-        <p className='ml-2'>12 Today</p>
+        <img src={arrow} alt='' />
+        <p className='ml-2'>{ amountChange } Today</p>
       </div>
     </div>
   );
