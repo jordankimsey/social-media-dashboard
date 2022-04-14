@@ -7,14 +7,14 @@ import SocialCardSection from './components/socialCard/SocialCardSection';
 
 function App() {
   return (
-    <div className='App'>
+    <div className='App h-screen w-screen overflow-y-auto overflow-x-hidden'>
       <div className='container h-screen w-screen overflow-y-auto overflow-x-hidden flex flex-col items-center'>
         <Header />
         <div className='container flex flex-col justify-center items-center'>
-         <SocialCardSection/>
+          <SocialCardSection />
         </div>
-        <div className="overview-section mb-10">
-        <Overview/>
+        <div className='container overview-section mb-10'>
+          <Overview />
         </div>
         <AttributionFooter />
       </div>
